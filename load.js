@@ -1,9 +1,9 @@
-import data from 'historydata.json' assert {type: 'json'}
+import data from './historydata.json' assert {type: 'json'}
 const loads =() =>{
-  let datas=[];
+  let datalist=[];
   for (let item in data){
-    datas.push('<li class="list">'+item+'</li>');
+    datalist.push('<li class="list">'+item+'</li>');
   };
-  txt.innerHTML=datas.join('');
+  txt.innerHTML = datalist.join('');
 }
 document.getElementsByClassName("btn")[0].onclick = () => { loads() };

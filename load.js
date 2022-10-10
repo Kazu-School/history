@@ -5,5 +5,6 @@ const loads =() =>{
     datalist.push('<li class="list">'+item+'</li>');
   };
   txt.innerHTML = datalist.join('');
+  console.table(data)
 }
 document.getElementsByClassName("btn")[0].onclick = () => { loads() };

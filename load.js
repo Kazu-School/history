@@ -4,6 +4,16 @@ const loads =() =>{
   while( mytable.firstChild ){
     mytable.removeChild( mytable.firstChild );
   };
+  var mytr = mytable.insertRow(-1);
+  var myth = document.createElement("th");
+  myth.innerHTML="年号";
+  mytr.appendChild(myth);
+  var myth = document.createElement("th");
+  myth.innerHTML="正解";
+  mytr.appendChild(myth);
+  var myth = document.createElement("th");
+  myth.innerHTML="間違い";
+  mytr.appendChild(myth)
   for (let i=0; i < data.length; i++){
     var mytr = mytable.insertRow(-1);
     var myth = document.createElement("th");

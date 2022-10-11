@@ -1,8 +1,11 @@
 import data from './historydata.json' assert {type: 'json'}
 const loads =() =>{
+  var mytable = document.getElementById("table");
+  while( mytable.firstChild ){
+    mytable.removeChild( mytable.firstChild );
+  };
   for (let i=0; i < data.length; i++){
-    var mytable = document.getElementById("table");
-    var mytr = mytable.insertRow(i+1);
+    var mytr = mytable.insertRow(-1);
     var myth = document.createElement("th");
     myth.innerHTML = data[i][0];
     console.log(data[i][0]);

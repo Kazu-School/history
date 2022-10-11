@@ -10,7 +10,7 @@ const loads =() =>{
     var ans = mytr.insertCell(1);
     ans.innerHTML = data[i][1];
     console.log(data[i][1]);
-    for (let n=2; i < data[i].length; n++){
+    for (let n=2; n < data[i].length; n++){
       var def = mytr.insertCell(n);
       def.innerHTML=data[i][n];
       console.log(data[i][n]);

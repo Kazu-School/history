@@ -13,9 +13,8 @@ const loads =() =>{
     for (let n=2; i < data[i].length; n++){
       var def = mytr.insertCell(n);
       def.innerHTML=data[i][n];
-      console.log(data[i][n])
+      console.log(data[i][n]);
     };
   };
-  txt.innerHTML = datalist.join('');
-}
+};
 document.getElementsByClassName("btn")[0].onclick = () => { loads() };
